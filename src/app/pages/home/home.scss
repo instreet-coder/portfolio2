@@ -1,0 +1,144 @@
+.main {
+    padding: 3.125rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title_left {
+    font-family: Faustina, serif;
+    font-weight: 800;
+    font-size: 5.875rem;
+    line-height: 87%;
+    width: 500px;
+    height: 320px;
+    animation: slideInLeft 1.2s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.right {
+    width: 570px;
+    height: 550px;
+    animation: slideInRight 1.2s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main_top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    background-color: #bc0303;
+    border-radius: 0.5rem;
+    font-family: Faustina, serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a80202;
+    transform: scale(1.05);
+}
+
+.paragraf {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 6.25rem;
+}
+
+.title_paragraf {
+    font-family: Faustina, serif;
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.text_paragraf {
+    font-family: Faustina, serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+    .main_text {
+        grid-template-columns: 1fr;
+    }
+
+    .title_left {
+        font-size: 3rem;
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+
+    .title_paragraf,
+    .text_paragraf {
+        text-align: center;
+        padding: 0 1rem;
+    }
+}

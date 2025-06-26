@@ -1,0 +1,88 @@
+.header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #0D0D0D;
+  }
+  
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #0D0D0D;
+  }
+  
+  .name {
+    font-family: Faustina, serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    background-color: #0D0D0D;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav_link {
+    font-family: Faustina, serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: auto;
+  }
+  
+  .nav_link:hover,
+  .nav_link.active {
+    color: #bc0303;
+  }
+  
+  .hr_header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    padding-top: 10px;
+    margin-left: auto;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .menu-toggle:checked ~ .nav {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  }

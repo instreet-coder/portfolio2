@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital@0;1&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #fff;
+}
+
+header {
+    background-color: #0D0D0D;
+}
+
+footer {
+    background-color: #0D0D0D;
+}
+
+footer .contact {
+    height: 500px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 3.125rem;
+        padding-right: 3.125rem;
+      }
+}

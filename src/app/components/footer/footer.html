@@ -1,0 +1,17 @@
+<hr />
+
+<footer class="footer">
+  <div class="container footer_container">
+    <p class="to_call">
+      Don’t miss the opportunity — feel free to get in touch with us today. We’re just one message away.
+    </p>
+
+    <a
+      routerLink="/contact"
+      class="click_link"
+      *ngIf="!router.url.includes('/contact')"
+    >
+      Click Here
+    </a>
+  </div>
+</footer>
