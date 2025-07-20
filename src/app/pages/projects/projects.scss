@@ -1,0 +1,150 @@
+.project {
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: scale(0.95);
+    opacity: 0;
+    animation: fadeInZoom 1.2s ease-out forwards;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        transform: scale(0.95) rotateX(15deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotateX(0);
+        opacity: 1;
+    }
+}
+
+/* Заголовок */
+.project-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+/* Описание */
+.project-description {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-family: Faustina, sans-serif;
+    font-weight: 500;
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+/* Технологии */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+.project-tech li {
+    background-color: #eee;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.project-tech li:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Ссылки */
+.project-links {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+
+.project-links a {
+    margin-right: 15px;
+    color: #bc0303;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Анимации */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 🌐 Адаптация для мобильных */
+@media (max-width: 768px) {
+    .project {
+        padding: 30px 20px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .project-tech li {
+        font-size: 13px;
+    }
+
+    .project-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
